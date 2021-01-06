@@ -19,7 +19,7 @@ let csvStream = csv.fromPath("csv_file_path", { headers: true })
     .on("data", function(record){
         csvStream.pause();
 
-        if(counter < 100)
+        if(counter < 1000000)
         {
             let region = record.Region;
             let country = record.Country;
